@@ -2,6 +2,14 @@
 <head>
     <title>DRUGGLER</title>
     <link rel="stylesheet" href="styles/style.css">
+    <meta charset="utf-8">
+
+    <!-- Load d3.js -->
+<!--    <script src="./lib/d3.min.js"></script>-->
+<!--    External D3 Library-->
+    <script src="https://d3js.org/d3.v4.js"></script>
+
+
 </head>
 
 <body>
@@ -31,7 +39,8 @@
     <div id="price" class="price">
         <h2>Price</h2>
         <!-- TODO: Price delta wholesale/retail Graph-->
-        <script src="scripts/price.js"></script>
+        <div id="price_graph"></div>
+        <script src="./scripts/price.js"></script>
     </div>
 
     <footer id="footer">
@@ -39,5 +48,5 @@
     <!-- TODO: RSS FEED https://www.nytimes.com/svc/collections/v1/publish/http://www.nytimes.com/topic/subject/drug-abuse-and-traffic/rss.xml-->
     </footer>
 </div>
-    
+
 </body>
