@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0px 0px;
+    grid-template-areas:
+    "MAP MAP MAP MAP ControlPanel"
+    "Purity Purity Price Price ControlPanel"
+    "RSS-Feed RSS-Feed RSS-Feed RSS-Feed RSS-Feed";
+}
+
+footer{
+    grid-area: RSS-Feed;
+    background: red;
+}
+
+.map {
+    grid-area: MAP;
+    background: blue;
+}
+
+.controlPanel{
+    grid-area: ControlPanel;
+    background: green;
+}
+
+.purity {
+    grid-area: Purity;
+    background: violet;
+}
+
+.price {
+    grid-area: Price;
+    background: orange;
+}
