@@ -8,8 +8,7 @@
     <!-- Load d3.js -->
 <!--    <script src="./lib/d3.min.js"></script>-->
 <!--    External D3 Library-->
-    <script src="https://d3js.org/d3.v4.js"></script>
-
+<script src="https://d3js.org/d3.v4.js"></script>
 
 </head>
 
@@ -53,12 +52,16 @@
             <h1> BigMac Price Comparisation</h1>
             <p>USA, CH, NL, GB & JP Daten in Bigmac CSV<br> Stundenlohn CSV USA, CH, NL, GB, JP</p>
             <div id="bigMacIndexChart"></div>
+            <div>
+                <svg id="bigMacIndexChartInfo" height=100 width=460></svg>
+            </div>
             <p class="textBubble">Did you know that...</p>
         </section>
         <section id="price-section">
             <h1> Drogenpreis Comparison</h1>
-            <select id="priceComparisonButton"></select>
-            <div id="priceComparisonChart"></div>
+            <div id="canabisChart"></div>
+            <div id="cocaineChart"></div>
+            <div id="methChart"></div>
         </section>
         <section id="workForDrugs-section">
             <h1> Wie lange muss man Arbeiten für Essen & Drogen? </h1>
@@ -67,9 +70,8 @@
 
 <script src="./scripts/bigMacIndex.js"></script>
 <script src="./scripts/drugPrices.js"></script>
-
+    <script src="./scripts/canabis_chart.js"></script>
 <!-- Color Scale -->
-<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 <!--<script src="./scripts/price.js"></script>-->
 <!--<script src="./scripts/purity.js"></script>-->
 </body>
