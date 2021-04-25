@@ -6,7 +6,11 @@
 }
 
 .dealer {
-    position: absolute;
-    alignment: right;
-    width: 30em;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+}
+
+#dealer {
+    width: 12em;
 }
