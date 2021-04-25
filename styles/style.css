@@ -44,6 +44,11 @@ body {
     overflow-y: scroll;
 }
 
+.box-box {
+    display: flex;
+    flex-direction: row;
+}
+
 section{
     padding: 5em;
     width: 100%;

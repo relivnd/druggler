@@ -53,24 +53,52 @@
             <p>USA, CH, NL, GB & JP Daten in Bigmac CSV<br> Stundenlohn CSV USA, CH, NL, GB, JP</p>
             <div id="bigMacIndexChart"></div>
             <div>
-                <svg id="bigMacIndexChartInfo" height=100 width=460></svg>
+                <svg id="bigMacIndexChartInfo" height=50 width=460></svg>
             </div>
             <p class="textBubble">Did you know that...</p>
         </section>
         <section id="price-section">
             <h1> Drogenpreis Comparison</h1>
-            <div id="canabisChart"></div>
-            <div id="cocaineChart"></div>
-            <div id="methChart"></div>
+            <div class="box-box">
+                <div>
+                    <div id="canabisPrice"></div>
+                    <div>
+                        <svg id="canabisPriceInfo" height=50 width=460></svg>
+                    </div>
+                </div>
+                <div>
+                    <div id="cocainePrice"></div>
+                    <div>
+                        <svg id="cocainePriceInfo" height=50 width=460></svg>
+                    </div>
+                </div>
+                <div>
+                    <div id="methPrice"></div>
+                    <div>
+                        <svg id="methPriceInfo" height=50 width=460></svg>
+                    </div>
+                </div>
+
+            </div>
+
         </section>
         <section id="workForDrugs-section">
             <h1> Wie lange muss man Arbeiten für Essen & Drogen? </h1>
+            <!-- Add buttons for each country -->
+            <button onclick="update(dataUSA)">United States</button>
+            <button onclick="update(dataJAPAN)">Japan</button>
+            <button onclick="update(dataGREATBRITAN)">Great Britan</button>
+            <button onclick="update(dataNORWAY)">Norway</button>
+            <button onclick="update(dataSWITZERLAND)">Switzerland</button>
+            <div id="finalComparison"></div>
         </section>
     </div>
 
 <script src="./scripts/bigMacIndex.js"></script>
-<script src="./scripts/drugPrices.js"></script>
-    <script src="./scripts/canabis_chart.js"></script>
+<script src="./scripts/canabisPrice.js"></script>
+    <script src="./scripts/cocainePrice.js"></script>
+    <script src="./scripts/methPrice.js"></script>
+    <script src="./scripts/finalComparison.js"></script>
 <!-- Color Scale -->
 <!--<script src="./scripts/price.js"></script>-->
 <!--<script src="./scripts/purity.js"></script>-->
