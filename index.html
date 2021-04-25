@@ -52,16 +52,24 @@
         <section id="bigMacIndex-section">
             <h1> BigMac Price Comparisation</h1>
             <p>USA, CH, NL, GB & JP Daten in Bigmac CSV<br> Stundenlohn CSV USA, CH, NL, GB, JP</p>
+            <div id="bigMacIndexChart"></div>
             <p class="textBubble">Did you know that...</p>
         </section>
         <section id="price-section">
             <h1> Drogenpreis Comparison</h1>
+            <select id="priceComparisonButton"></select>
+            <div id="priceComparisonChart"></div>
         </section>
         <section id="workForDrugs-section">
             <h1> Wie lange muss man Arbeiten für Essen & Drogen? </h1>
         </section>
     </div>
 
+<script src="./scripts/bigMacIndex.js"></script>
+<script src="./scripts/drugPrices.js"></script>
+
+<!-- Color Scale -->
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 <!--<script src="./scripts/price.js"></script>-->
 <!--<script src="./scripts/purity.js"></script>-->
 </body>
