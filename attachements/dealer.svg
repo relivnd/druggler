@@ -13,6 +13,22 @@
                 <path d="M244.260313,238 C261.642444,238 279.01544,246.184556 279.260313,255 C279.51544,264.184556 262.392071,274 245.260313,274 C227.892071,274 210.519066,264.315084 210.260313,255 C210.019066,246.315084 227.142444,238 244.260313,238 Z" id="Mouth" fill="#FFCC9A"></path>
                 <polygon id="hair-l" fill="#7F4737" points="129.260313 140 145.260313 138 144.260313 175"></polygon>
                 <polygon id="hair-r" fill="#7F4737" points="344.260313 138 358.260313 140 344.260313 175"></polygon>
+                <g id="mouth" transform="translate(218.260313, 242.000000)" fill="#000000">
+                    <ellipse id="mouth-open" cx="26" cy="14" rx="26" ry="14"></ellipse>
+                    <ellipse id="mouth-closed" cx="26" cy="13.5" rx="26" ry="8.5"></ellipse>
+                </g>
+                <g id="eye-left" transform="translate(193.260313, 146.000000)">
+                    <circle id="eye-open" fill="#000000" cx="8.5" cy="8.5" r="8.5"></circle>
+                    <ellipse id="eye-closed" fill="#000000" cx="8.5" cy="8.5" rx="8.5" ry="4.5"></ellipse>
+                    <circle id="eye-dot" fill="#FFFFFF" cx="10.5" cy="12.5" r="1.5"></circle>
+                </g>
+                <g id="eye-right" transform="translate(280.260313, 146.000000)">
+                    <circle id="eye-open" fill="#000000" cx="8.5" cy="8.5" r="8.5"></circle>
+                    <ellipse id="eye-closed" fill="#000000" cx="8.5" cy="8.5" rx="8.5" ry="4.5"></ellipse>
+                    <circle id="eye-dot" fill="#FFFFFF" cx="11.5" cy="12.5" r="1.5"></circle>
+                </g>
+                <polygon id="armpit-left" fill="#272727" points="119.260313 378 129.260313 462 109.260313 462"></polygon>
+                <polygon id="armpit-right" fill="#272727" points="372.260313 378 382.260313 462 362.260313 462"></polygon>
             </g>
         </g>
     </g>
