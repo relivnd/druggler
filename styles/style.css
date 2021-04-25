@@ -5,12 +5,19 @@
     border: black;
 }
 
-.dealer {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 10px;
+html {
+    height: 100%;
 }
 
-#dealer {
-    width: 12em;
+body {
+    height: 100%;
+    background: rgb(121,9,9);
+    background: linear-gradient(331deg, rgba(121,9,9,1) 0%, rgba(255,0,59,1) 100%);
+}
+
+.dealer {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    width: 30em;
 }
