@@ -17,8 +17,9 @@
 
     <div class="dealer-wrapper">
 
-        <div class="textBubble">adsfgasdf</div>
-        <div class="dealer"></div>
+        <div id="textBubble" class="textBubble">adsfgasdf</div>
+        <div id="dealerContainer" class="dealer"></div>
+        <script src="scripts/dealerProjector.js"></script>
 
     </div>
 
@@ -26,7 +27,7 @@
         <section id="introduction">
             <h1> Introduction</h1>
             <input type="button" value="Yes!" formaction="https://google.com">
-            <input type="button" value="Of course not!">
+            <input type="button" onclick="speak()" value="Of course not!">
             <p class="textBubble">Fantastic. My name's Steve. I'm a local drug dealer. What's your name?</p>
             <form>
                 <input type="text">

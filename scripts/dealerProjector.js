@@ -14,8 +14,7 @@ const dealer = mouthState => `
                         <polygon id="hair-l" fill="#7F4737" points="129.260313 140 145.260313 138 144.260313 175"></polygon>
                         <polygon id="hair-r" fill="#7F4737" points="344.260313 138 358.260313 140 344.260313 175"></polygon>
                         <g id="mouth" transform="translate(218.260313, 242.000000)" fill="#000000">
-                            <ellipse id="mouth-open" cx="26" cy="14" rx="26" ry="14"></ellipse>
-                            <ellipse id="mouth-closed" cx="26" cy="13.5" rx="26" ry="8.5"></ellipse>
+                            <ellipse id="mouth" cx="${mouthState.cx}" cy="${mouthState.cy}" rx="${mouthState.rx}" ry="${mouthState.ry}"></ellipse>
                         </g>
                         <g id="eye-left" transform="translate(193.260313, 146.000000)">
                             <circle id="eye-open" fill="#000000" cx="8.5" cy="8.5" r="8.5"></circle>
@@ -34,3 +33,32 @@ const dealer = mouthState => `
             </g>
         </svg>
     `;
+
+drawDealer = mouthState => document.getElementById("dealerContainer").innerHTML = dealer(mouthState);
+
+let i = 0;
+let text = 'pssst, hey you! Yes YOU! Are you a cop?';
+let speed = 50;
+
+let mouthOpen = {
+    cx:26,
+    cy:14,
+    rx:26,
+    ry:14
+}
+
+let mouthClose = {
+    cx:26,
+    cy:13.5,
+    rx:26,
+    ry:8.5
+}
+
+speak = _ => {
+    if (i < text.length) {
+        document.getElementById("textBubble").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(speak, speed);
+        drawDealer(i % 2 !== 0 ? mouthOpen : mouthClose);
+    }
+}
