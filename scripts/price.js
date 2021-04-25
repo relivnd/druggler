@@ -3,7 +3,7 @@ var margin = {top: 10, right: 30, bottom: 30, left: 60},
     width = 460 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 // append the svg object to the body of the page
-var svg = d3.select("#price_graph")
+const priceGraph = d3.select("#price_graph")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -22,17 +22,17 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/co
         var x = d3.scaleTime()
             .domain(d3.extent(data, function(d) { return d.date; }))
             .range([ 0, width ]);
-        svg.append("g")
+        priceGraph.append("g")
             .attr("transform", "translate(0," + height + ")")
             .call(d3.axisBottom(x));
         // Add Y axis
         var y = d3.scaleLinear()
             .domain( [8000, 9200])
             .range([ height, 0 ]);
-        svg.append("g")
+        priceGraph.append("g")
             .call(d3.axisLeft(y));
         // Add the line
-        svg.append("path")
+        priceGraph.append("path")
             .datum(data)
             .attr("fill", "none")
             .attr("stroke", "#69b3a2")
@@ -42,7 +42,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/co
                 .y(function(d) { return y(d.value) })
             )
         // Add the points
-        svg
+        priceGraph
             .append("g")
             .selectAll("dot")
             .data(data)
