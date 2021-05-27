@@ -55,12 +55,17 @@ let mouthClose = {
     ry:8.5
 }
 
+
 const speak = t => {
-    let txt = t;
-    let writeIt = _ => {
-        document.getElementById("textBubble").innerHTML += txt.charAt(i);
-        i++;
+    let text = t;
+    let IntervalID = setInterval(typewriter, 50);
+    function typewriter() {
+        document.getElementById("textBubble").innerHTML += text.charAt(i);
         drawDealer(i % 2 !== 0 ? mouthOpen : mouthClose);
-      }
-    setTimeout(writeIt, 500);
+        if (i >= text.length){
+            clearInterval(IntervalID);
+        } else {
+            i++;
+        }
+    }
 }
