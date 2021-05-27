@@ -57,13 +57,12 @@ let mouthClose = {
 
 const speak = t => {
     let txt = t;
-    let writeIt = function() {
-    while (i < txt.length) {
+    let writeIt = _ => {
         document.getElementById("textBubble").innerHTML += txt.charAt(i);
         i++;
-        setTimeout(speed)
         drawDealer(i % 2 !== 0 ? mouthOpen : mouthClose);
-    } writeIt(txt); }
+      }
+    setTimeout(writeIt, 500);
 }
 
 // const speak = t => {
