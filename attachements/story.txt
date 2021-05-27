@@ -1,0 +1,19 @@
+Hey you! yes YOU! Are you a cop?
+=> yes => google.com
+=> no => Okay good, I’m a dealer…
+for drugs…
+or better said for information…
+information about drugs…
+an information drug dealer
+By the way, I’m Steve.
+What’s your name?
+=> $name => Hi $name
+Drugs are a little bit like stock
+Supply and demand regulate the price as brutal as fuck
+that’s because drugs don’t know any governmental regulations
+except for the fact of course… that they’re illegal.
+Where are you from?
+=> $country => Funny country related line
+Okay $name, let’s have a look at how expensive drugs are in $country in comparison
+You might ask why drugs are so expensive in $country?
+Don’t ask me, I’m a drug dealer, not you economy teacher
