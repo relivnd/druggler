@@ -6,11 +6,11 @@ export  { dialogue }
     "dialogueID": 1,
     "content": 'Hey you! yes YOU! Are you a cop?',
     "button1": {
-      "visibility": true,
+      "visibility": "hidden",
       "value": "Yes!"
     },
     "button2": {
-      "visibility": true,
+      "visibility": "hidden",
       "value": "No, of course Not!"
     },
     "textfield": {
