@@ -64,17 +64,3 @@ const speak = t => {
       }
     setTimeout(writeIt, 500);
 }
-
-// const speak = t => {
-//     let chars = t.split('');
-//     let doItNow = function () {
-//         document.getElementById("textBubble").innerHTML += chars[i];
-//         i++;
-//         drawDealer(i % 2 !== 0 ? mouthOpen : mouthClose);
-//     };
-//     while (i < chars.length) {
-//         setTimeout(doItNow, speed);
-//     }
-//     clearTimeout();
-//     i = 0;
-// }
