@@ -7,7 +7,7 @@ document.getElementById('startGoonButton').onclick = _ => goForward();
 
 
 function goForward(){
-    if (indexOfDialogue > dialogue.dialogue.length) {
+    if (indexOfDialogue < dialogue.dialogue.length) {
         const speech = dialogue.dialogue[indexOfDialogue].content;
         //const button1Visibility = dialogue.dialogue[indexOfDialogue].button1.visibility;
         //const button1Content = dialogue.dialogue[indexOfDialogue].button1.value;
