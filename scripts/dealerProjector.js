@@ -1,4 +1,4 @@
-export { speak }
+export { speak } ;
 
 const dealer = mouthState => `
     <svg class="dealer" viewBox="0 0 491 462" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -55,11 +55,15 @@ let mouthClose = {
     ry:8.5
 }
 
-const speak = text => {
-    if (i < text.length) {
-        document.getElementById("textBubble").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(speak, speed);
-        drawDealer(i % 2 !== 0 ? mouthOpen : mouthClose);
-    }
+const speak = t => {
+
+        let chars = t.split('');
+        while (i < chars.length) {
+            document.getElementById("textBubble").innerHTML += chars[i];
+            i++;
+            // setTimeout(speak, speed);
+            drawDealer(i % 2 !== 0 ? mouthOpen : mouthClose)
+        }
+        i = 0;
+
 }
