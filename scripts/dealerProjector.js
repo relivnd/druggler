@@ -56,14 +56,26 @@ let mouthClose = {
 }
 
 const speak = t => {
-
-        let chars = t.split('');
-        while (i < chars.length) {
-            document.getElementById("textBubble").innerHTML += chars[i];
-            i++;
-            // setTimeout(speak, speed);
-            drawDealer(i % 2 !== 0 ? mouthOpen : mouthClose)
-        }
-        i = 0;
-
+    let txt = t;
+    let writeIt = function() {
+    if (i < txt.length) {
+        document.getElementById("textBubble").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(speak, speed);
+        drawDealer(i % 2 !== 0 ? mouthOpen : mouthClose);
+    } writeIt(); }
 }
+
+// const speak = t => {
+//     let chars = t.split('');
+//     let doItNow = function () {
+//         document.getElementById("textBubble").innerHTML += chars[i];
+//         i++;
+//         drawDealer(i % 2 !== 0 ? mouthOpen : mouthClose);
+//     };
+//     while (i < chars.length) {
+//         setTimeout(doItNow, speed);
+//     }
+//     clearTimeout();
+//     i = 0;
+// }
