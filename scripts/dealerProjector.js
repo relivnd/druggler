@@ -59,11 +59,13 @@ let mouthClose = {
 const speak = t => {
     let text = t;
     let IntervalID = setInterval(typewriter, 50);
+    document.getElementById("textBubble").innerHTML="";
     function typewriter() {
         document.getElementById("textBubble").innerHTML += text.charAt(i);
         drawDealer(i % 2 !== 0 ? mouthOpen : mouthClose);
         if (i >= text.length){
             clearInterval(IntervalID);
+            i = 0;
         } else {
             i++;
         }

@@ -6,7 +6,7 @@ export  { dialogue }
     "dialogueID": 1,
     "content": 'Hey you! yes YOU! Are you a cop?',
     "button1": {
-      "visibility": "hidden",
+      "visibility": "none",
       "value": "Yes!"
     },
     "button2": {
@@ -22,8 +22,8 @@ export  { dialogue }
     "dialogueID": 2,
     "content": "Okay good, I’m a dealer…",
     "button1": {
-      "visibility": false,
-      "value": null
+      "visibility": "block",
+      "value": "Yes!"
     },
     "button2": {
       "visibility": false,
@@ -38,8 +38,8 @@ export  { dialogue }
     "dialogueID": 3,
     "content": "for drugs…",
     "button1": {
-      "visibility": false,
-      "value": null
+      "visibility": "none",
+      "value": "Yes!"
     },
     "button2": {
       "visibility": false,
@@ -54,8 +54,8 @@ export  { dialogue }
     "dialogueID": 4,
     "content": "or better said for information…",
     "button1": {
-      "visibility": false,
-      "value": null
+      "visibility": "block",
+      "value": "Heinz"
     },
     "button2": {
       "visibility": false,
@@ -70,7 +70,7 @@ export  { dialogue }
     "dialogueID": 5,
     "content": "information about drugs…",
     "button1": {
-      "visibility": false,
+      "visibility": "none",
       "value": null
     },
     "button2": {
