@@ -57,6 +57,7 @@ let mouthClose = {
 
 
 const speak = t => {
+    document.getElementById("textBubble").innerHTML = "";
     let text = t;
     let IntervalID = setInterval(typewriter, 50);
     document.getElementById("textBubble").innerHTML="";
