@@ -3,7 +3,7 @@ import { dialogue } from "./dialogueContent.js";
 
 let indexOfDialogue = 0;
 
-document.getElementById('startGoonButton').onclick = _ => goForward();
+document.getElementById('startGoOnButton').onclick = _ => goForward();
 
 
 function goForward(){
