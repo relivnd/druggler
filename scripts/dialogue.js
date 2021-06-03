@@ -3,24 +3,25 @@ import { dialogue } from "./dialogueContent.js";
 
 let indexOfDialogue = 0;
 
-document.getElementById('startGoOnButton').onclick = _ => goForward();
+document.getElementById('button1').onclick = _ => goForward();
+
 
 
 function goForward(){
     if (indexOfDialogue < dialogue.dialogue.length) {
-        const speech = dialogue.dialogue[indexOfDialogue].content;
-        const button1Visibility = dialogue.dialogue[indexOfDialogue].button1.visibility;
-        const button1Content = dialogue.dialogue[indexOfDialogue].button1.value;
+        let speech             = dialogue.dialogue[indexOfDialogue].content;
+        document.getElementById("button1").style.display = "none";
 
-        speak(speech);
 
-        document.getElementById("button1").style.display = button1Visibility;
-        document.getElementById("button1").innerHTML=button1Content;
-        //document.getElementById("button1").innerHTML += button1Content;
-
+        speak(speech, button1Listener);
         indexOfDialogue = indexOfDialogue +1;
     }else {
         indexOfDialogue = 0;
     }
+}
+
+const button1Listener = _ => {
+    document.getElementById("button1").style.display = dialogue.dialogue[indexOfDialogue].button1.visibility;
+    document.getElementById("button1").innerHTML     = dialogue.dialogue[indexOfDialogue].button1.value;
 }
 
