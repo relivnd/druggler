@@ -3,7 +3,7 @@ import { dialogue } from "./dialogueContent.js";
 
 let indexOfDialogue = 0;
 let k = 0;
-let userName = "";
+let userName = "Stranger";
 let userLocation = "";
 
 const input = document.querySelector('input');
@@ -16,7 +16,7 @@ let i = 0;
 let speed = 50;
 
 const speak = (t) => {
-    hideButtonsWhileSpeaking();
+    hideInteractionElementsWhileSpeaking();
     document.getElementById("textBubble").innerHTML = "";
     let text = t;
     let IntervalID = setInterval(typewriter, 50);
@@ -50,22 +50,24 @@ function alternativeOption(){
 }
 
 const updateElementsListener = o => {
-    document.getElementById("button1").style.display    = o.button1.visibility;
-    document.getElementById("button1").innerHTML        = o.button1.value;
-    document.getElementById("button2").style.display    = o.button2.visibility;
-    document.getElementById("button2").innerHTML        = o.button2.value;
-    document.getElementById("enterName").style.display  = o.textfield.visibility;
-    document.getElementById("graph1").style.display     = o.graph1;
-    document.getElementById("graph2").style.display     = o.graph2;
-    document.getElementById("graph3").style.display     = o.graph3;
-    document.getElementById("graph4").style.display     = o.graph4;
-    document.getElementById("graph5").style.display     = o.graph5;
-    document.getElementById("enterCountry").style.display = o.radiobutton;
+    document.getElementById("button1").style.display        = o.button1.visibility;
+    document.getElementById("button1").innerHTML            = o.button1.value;
+    document.getElementById("button2").style.display        = o.button2;
+    document.getElementById("enterName").style.display      = o.textfield.visibility;
+    document.getElementById("graph1").style.display         = o.graph1;
+    document.getElementById("graph2").style.display         = o.graph2;
+    document.getElementById("graph3").style.display         = o.graph3;
+    document.getElementById("graph4").style.display         = o.graph4;
+    document.getElementById("graph5").style.display         = o.graph5;
+    document.getElementById("enterCountry").style.display   = o.radiobutton;
+    document.getElementById("credits").style.display        = o.credits;
 }
 
-const hideButtonsWhileSpeaking = _ => {
-    document.getElementById("button1").style.display = 'none';
-    document.getElementById("button2").style.display = 'none';
+const hideInteractionElementsWhileSpeaking = _ => {
+    document.getElementById("button1").style.display        = 'none';
+    document.getElementById("button2").style.display        = 'none';
+    document.getElementById("enterName").style.display      = 'none';
+    document.getElementById("enterCountry").style.display   ='none';
 }
 
 const updateUsername = t => {
@@ -76,6 +78,19 @@ const checkForSpecialty = t => {
     let s = t;
     s = s.replace(/NAME/, userName);
     s = s.replace(/LOCATION/, userLocation);
+    if (s.includes("COUNTRYJOKE")){
+        if (userLocation === "Switzerland"){
+            s = s.replace(/COUNTRYJOKE/, "Do you know why do many Swiss people have such big noses? The air is free!");
+        }else if (userLocation === "Japan"){
+            s = s.replace(/COUNTRYJOKE/, "My Japanese friend told me a Peral Harbor joke. I told him he bombed it.");
+        } else if (userLocation === "Norway"){
+        s = s.replace(/COUNTRYJOKE/, "What car does a norwegian man drive? A fjord focus!");
+        } else if (userLocation === "USA"){
+            s = s.replace(/COUNTRYJOKE/, "What’s the difference between America and a bottle of milk? – In 200 years the milk will have developed a culture.");
+        }else {
+            s = s.replace(/COUNTRYJOKE/, "Why doesn't England have a designated kidney bank? They have a Liverpool.");
+        }
+    }
     return s;
 }
 
