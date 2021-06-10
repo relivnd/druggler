@@ -124,7 +124,7 @@ export  { dialogue }
   },
   {
     "dialogueID": 9,
-    "content": "Hi" + getUsername(),
+    "content": "Hi",
     "button1": {
       "visibility": "block",
       "value": "Yes!"

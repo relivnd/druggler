@@ -35,9 +35,6 @@ const speak = (t) => {
 function goForward(){
     if (indexOfDialogue < dialogue.dialogue.length) {
         let speech             = dialogue.dialogue[indexOfDialogue].content;
-        // document.getElementById("button1").style.display = "none";
-
-
         speak(speech);
         indexOfDialogue = indexOfDialogue +1;
     }else {
@@ -46,7 +43,7 @@ function goForward(){
 }
 
 function alternativeOption(){
-
+    //TODO: Make Button Link to Google.com
 }
 
 const updateButtonListener = o => {
@@ -71,3 +68,13 @@ input.addEventListener('input', updateUsername);
 const getUsername = _ => {
     return userName;
 }
+
+//TODO: Write Function which searches for USERNAME and replaces it with variable userName
+
+//TODO: Same for Country
+
+//TODO: Make Graphs visible or disappear
+
+//TODO: ADD Styling
+
+//TODO:
