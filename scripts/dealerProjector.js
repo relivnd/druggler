@@ -1,4 +1,4 @@
-export { speak } ;
+export { drawDealer } ;
 
 const dealer = mouthState => `
     <svg class="dealer" viewBox="0 0 491 462" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -36,11 +36,6 @@ const dealer = mouthState => `
         </svg>
     `;
 
-const drawDealer = mouthState => document.getElementById("dealerContainer").innerHTML = dealer(mouthState);
-
-let i = 0;
-let speed = 50;
-
 let mouthOpen = {
     cx:26,
     cy:14,
@@ -55,20 +50,4 @@ let mouthClose = {
     ry:8.5
 }
 
-
-const speak = (t) => {
-    document.getElementById("textBubble").innerHTML = "";
-    let text = t;
-    let IntervalID = setInterval(typewriter, 50);
-    document.getElementById("textBubble").innerHTML="";
-    function typewriter() {
-        document.getElementById("textBubble").innerHTML += text.charAt(i);
-        drawDealer(i % 2 !== 0 ? mouthOpen : mouthClose);
-        if (i >= text.length){
-            clearInterval(IntervalID);
-            i = 0;
-        } else {
-            i++;
-        }
-    }
-}
+const drawDealer = mouthState => document.getElementById("dealerContainer").innerHTML = dealer(s ? mouthOpen : mouthClose);
