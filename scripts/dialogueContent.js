@@ -16,7 +16,7 @@ export  { dialogue }
     "textfield": {
       "visibility": "none"
     },
-    "graph1": "block",
+    "graph1": "none",
     "graph2": "none",
     "graph3": "none",
     "graph4": "none",
@@ -37,7 +37,7 @@ export  { dialogue }
       "visibility": "none"
     },
     "graph1": "none",
-    "graph2": "block",
+    "graph2": "none",
     "graph3": "none",
     "graph4": "none",
     "graph5": "none"
@@ -58,7 +58,7 @@ export  { dialogue }
     },
     "graph1": "none",
     "graph2": "none",
-    "graph3": "block",
+    "graph3": "none",
     "graph4": "none",
     "graph5": "none"
   },
@@ -79,7 +79,7 @@ export  { dialogue }
     "graph1": "none",
     "graph2": "none",
     "graph3": "none",
-    "graph4": "block",
+    "graph4": "none",
     "graph5": "none"
   },
   {
@@ -100,7 +100,7 @@ export  { dialogue }
     "graph2": "none",
     "graph3": "none",
     "graph4": "none",
-    "graph5": "block"
+    "graph5": "none"
   },
   {
     "dialogueID": 6,
@@ -155,7 +155,7 @@ export  { dialogue }
   },
   {
     "dialogueID": 9,
-    "content": "Hi",
+    "content": "Hi NAME",
     "button1": {
       "visibility": "block",
       "value": "Yes!"

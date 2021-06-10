@@ -3,6 +3,7 @@ import { dialogue } from "./dialogueContent.js";
 
 let indexOfDialogue = 0;
 let userName = "";
+let userLocation = "";
 
 const input = document.querySelector('input');
 
@@ -34,7 +35,7 @@ const speak = (t) => {
 
 function goForward(){
     if (indexOfDialogue < dialogue.dialogue.length) {
-        let speech             = dialogue.dialogue[indexOfDialogue].content;
+        let speech = checkForSpecialty(dialogue.dialogue[indexOfDialogue].content);
         speak(speech);
         indexOfDialogue = indexOfDialogue +1;
     }else {
@@ -68,12 +69,14 @@ const updateUsername = t => {
     userName =  t.target.value;
 }
 
+const checkForSpecialty = t => {
+    let s = t;
+    s = s.replace(/NAME/, userName);
+    s = s.replace(/LOCATION/, userLocation);
+    return s;
+}
+
 input.addEventListener('input', updateUsername);
-
-
-//TODO: Write Function which searches for USERNAME and replaces it with variable userName
-
-//TODO: Same for Country
 
 //TODO: ADD Styling
 
