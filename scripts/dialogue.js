@@ -10,7 +10,7 @@ document.getElementById('button1').onclick = _ => goForward();
 function goForward(){
     if (indexOfDialogue < dialogue.dialogue.length) {
         let speech             = dialogue.dialogue[indexOfDialogue].content;
-        document.getElementById("button1").style.display = "none";
+        // document.getElementById("button1").style.display = "none";
 
 
         speak(speech, button1Listener);
