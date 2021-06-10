@@ -2,16 +2,20 @@ import { drawDealer } from "./dealerProjector.js";
 import { dialogue } from "./dialogueContent.js";
 
 let indexOfDialogue = 0;
+let userName = "";
+const log = document.getElementById('debugUsername');
+
+const input = document.querySelector('input');
 
 document.getElementById('button1').onclick = _ => goForward();
 document.getElementById('button2').onclick = _ => alternativeOption();
+document.getElementById('textField').onchange = _ => updateUsername(document.getElementById('textField').textContent);
 
 let i = 0;
 let speed = 50;
 
 const speak = (t) => {
-    document.getElementById("button1").style.display = 'none';
-    document.getElementById("button2").style.display = 'none';
+    hideButtonsWhileSpeaking();
     document.getElementById("textBubble").innerHTML = "";
     let text = t;
     let IntervalID = setInterval(typewriter, 50);
@@ -51,7 +55,19 @@ const updateButtonListener = o => {
     document.getElementById("button1").innerHTML     = o.button1.value;
     document.getElementById("button2").style.display = o.button2.visibility;
     document.getElementById("button2").innerHTML     = o.button2.value;
+    document.getElementById("enterName").style.display = o.textfield.visibility;
     // document.getElementById("button1").style.display = dialogue.dialogue[indexOfDialogue].button1.visibility;
     // document.getElementById("button1").innerHTML     = dialogue.dialogue[indexOfDialogue].button1.value;
 }
 
+const hideButtonsWhileSpeaking = _ => {
+    document.getElementById("button1").style.display = 'none';
+    document.getElementById("button2").style.display = 'none';
+}
+
+const updateUsername = t => {
+    userName +=  t.target.value;
+    log.textContent = t.target.value;
+}
+
+input.addEventListener('input', updateUsername);

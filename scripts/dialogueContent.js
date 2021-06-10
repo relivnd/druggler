@@ -14,8 +14,7 @@ export  { dialogue }
       "value": "No, of course Not!"
     },
     "textfield": {
-      "visibility": false,
-      "value": null
+      "visibility": "none"
     }
   },
   {
@@ -30,8 +29,7 @@ export  { dialogue }
       "value": "Yes?"
     },
     "textfield": {
-      "visibility": false,
-      "value": null
+      "visibility": "none"
     }
   },
   {
@@ -46,8 +44,7 @@ export  { dialogue }
       "value": null
     },
     "textfield": {
-      "visibility": false,
-      "value": null
+      "visibility": "block"
     }
   },
   {
