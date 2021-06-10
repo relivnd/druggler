@@ -23,11 +23,11 @@ export  { dialogue }
     "content": "Okay good, I’m a dealer…",
     "button1": {
       "visibility": "block",
-      "value": "Yes!"
+      "value": "NO!"
     },
     "button2": {
-      "visibility": false,
-      "value": null
+      "visibility": "block",
+      "value": "Yes?"
     },
     "textfield": {
       "visibility": false,
@@ -38,7 +38,7 @@ export  { dialogue }
     "dialogueID": 3,
     "content": "for drugs…",
     "button1": {
-      "visibility": "none",
+      "visibility": "block",
       "value": "Yes!"
     },
     "button2": {

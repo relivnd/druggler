@@ -50,4 +50,4 @@ let mouthClose = {
     ry:8.5
 }
 
-const drawDealer = mouthState => document.getElementById("dealerContainer").innerHTML = dealer(s ? mouthOpen : mouthClose);
+const drawDealer = mouthState => document.getElementById("dealerContainer").innerHTML = dealer(mouthState ? mouthOpen : mouthClose);
