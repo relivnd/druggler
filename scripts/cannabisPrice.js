@@ -3,7 +3,7 @@ var margin = {top: 30, right: 30, bottom: 50, left: 70},
     width = 550 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
-var svg_canabisPrice = d3.select("#canabisPrice")
+var svg_canabisPrice = d3.select("#cannabisPrice")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
@@ -66,7 +66,7 @@ d3.csv("data/drug_prices_canabis.csv", function(data) {
 
 })
 
-var svg_bigMacIndexChartInfo = d3.select("#canabisPriceInfo")
+var svg_bigMacIndexChartInfo = d3.select("#cannabisPriceInfo")
 
 svg_bigMacIndexChartInfo.append("circle").attr("cx",50).attr("cy",10).attr("r", 6).style("fill", "#e41a1c")
 svg_bigMacIndexChartInfo.append("circle").attr("cx",150).attr("cy",10).attr("r", 6).style("fill", "#377eb8")

@@ -17,7 +17,38 @@
     </div>
 
     <div class="graphs">
-
+            <div id="graph1" style="display: none">
+                <div id="cannabisPrice"></div>
+                <div>
+                    <svg id="cannabisPriceInfo" height=50 width=460></svg>
+                </div>
+            </div>
+            <div id="graph2" style="display: none">
+                <div id="cocainePrice"></div>
+                <div>
+                    <svg id="cocainePriceInfo" height=50 width=460></svg>
+                </div>
+            </div>
+            <div id="graph3" style="display: none">
+                <div id="methPrice"></div>
+                <div>
+                    <svg id="methPriceInfo" height=50 width=460></svg>
+                </div>
+            </div>
+        <div id="graph4" style="display: none">
+            <div id="bigMacIndexChart"></div>
+            <div>
+                <svg id="bigMacIndexChartInfo" height=50 width=460></svg>
+            </div>
+        </div>
+        <div id="graph5" style="display: none;">
+            <button id="usaButton"          onclick="update(dataUSA)">United States</button>
+            <button id="japanButton"        onclick="update(dataJAPAN)">Japan</button>
+            <button id="greatBritainButton" onclick="update(dataGREATBRITAN)">Great Britan</button>
+            <button id="norwayButton"       onclick="update(dataNORWAY)">Norway</button>
+            <button id="switzerlandButton"  onclick="update(dataSWITZERLAND)">Switzerland</button>
+            <div id="finalComparison"></div>
+        </div>
     </div>
 
     <div class="interaction" id="interaction">
@@ -29,5 +60,11 @@
         </div>
     </div>
 
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="./scripts/cannabisPrice.js"></script>
+    <script src="./scripts/cocainePrice.js"></script>
+    <script src="./scripts/methPrice.js"></script>
+    <script src="./scripts/finalComparison.js"></script>
+    <script src="./scripts/bigMacIndex.js"></script>
 
 </body>

@@ -25,7 +25,7 @@ const speak = (t) => {
         if (i >= text.length){
             clearInterval(IntervalID);
             i = 0;
-            updateButtonListener(dialogue.dialogue[indexOfDialogue]);
+            updateElementsListener(dialogue.dialogue[indexOfDialogue]);
         } else {
             i++;
         }
@@ -46,12 +46,17 @@ function alternativeOption(){
     //TODO: Make Button Link to Google.com
 }
 
-const updateButtonListener = o => {
+const updateElementsListener = o => {
     document.getElementById("button1").style.display    = o.button1.visibility;
     document.getElementById("button1").innerHTML        = o.button1.value;
     document.getElementById("button2").style.display    = o.button2.visibility;
     document.getElementById("button2").innerHTML        = o.button2.value;
     document.getElementById("enterName").style.display  = o.textfield.visibility;
+    document.getElementById("graph1").style.display     = o.graph1;
+    document.getElementById("graph2").style.display     = o.graph2;
+    document.getElementById("graph3").style.display     = o.graph3;
+    document.getElementById("graph4").style.display     = o.graph4;
+    document.getElementById("graph5").style.display     = o.graph5;
 }
 
 const hideButtonsWhileSpeaking = _ => {
@@ -73,8 +78,8 @@ const getUsername = _ => {
 
 //TODO: Same for Country
 
-//TODO: Make Graphs visible or disappear
-
 //TODO: ADD Styling
 
-//TODO:
+//TODO: Finish JSON script
+
+//TODO: Fix Chart Countries

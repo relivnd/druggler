@@ -15,7 +15,12 @@ export  { dialogue }
     },
     "textfield": {
       "visibility": "none"
-    }
+    },
+    "graph1": "block",
+    "graph2": "none",
+    "graph3": "none",
+    "graph4": "none",
+    "graph5": "none"
   },
   {
     "dialogueID": 2,
@@ -30,7 +35,12 @@ export  { dialogue }
     },
     "textfield": {
       "visibility": "none"
-    }
+    },
+    "graph1": "none",
+    "graph2": "block",
+    "graph3": "none",
+    "graph4": "none",
+    "graph5": "none"
   },
   {
     "dialogueID": 3,
@@ -45,7 +55,12 @@ export  { dialogue }
     },
     "textfield": {
       "visibility": "none"
-    }
+    },
+    "graph1": "none",
+    "graph2": "none",
+    "graph3": "block",
+    "graph4": "none",
+    "graph5": "none"
   },
   {
     "dialogueID": 4,
@@ -60,7 +75,12 @@ export  { dialogue }
     },
     "textfield": {
       "visibility": "none"
-    }
+    },
+    "graph1": "none",
+    "graph2": "none",
+    "graph3": "none",
+    "graph4": "block",
+    "graph5": "none"
   },
   {
     "dialogueID": 5,
@@ -75,7 +95,12 @@ export  { dialogue }
     },
     "textfield": {
       "visibility": "none"
-    }
+    },
+    "graph1": "none",
+    "graph2": "none",
+    "graph3": "none",
+    "graph4": "none",
+    "graph5": "block"
   },
   {
     "dialogueID": 6,
@@ -91,6 +116,12 @@ export  { dialogue }
     "textfield": {
       "visibility": "none"
     }
+    ,
+    "graph1": "none",
+    "graph2": "none",
+    "graph3": "none",
+    "graph4": "none",
+    "graph5": "none"
   },
   {
     "dialogueID": 7,
