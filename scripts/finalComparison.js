@@ -35,7 +35,7 @@ var dataSWITZERLAND = [
 
 var margin = {top: 30, right: 30, bottom: 70, left: 60},
     width = 550 - margin.left - margin.right,
-    height = 440 - margin.top - margin.bottom;
+    height = 420 - margin.top - margin.bottom;
 
 var svg_finalComparison = d3.select("#finalComparison")
     .append("svg")

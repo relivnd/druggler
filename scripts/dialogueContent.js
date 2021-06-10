@@ -33,7 +33,7 @@ const dialogue = {
       "graph2": "none",
       "graph3": "none",
       "graph4": "none",
-      "graph5": "block",
+      "graph5": "none",
       "radiobutton": "none",
       "content": 'Okay good, I’m a dealer…'
     },
