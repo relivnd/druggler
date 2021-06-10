@@ -2,6 +2,7 @@ import { drawDealer } from "./dealerProjector.js";
 import { dialogue } from "./dialogueContent.js";
 
 let indexOfDialogue = 0;
+let k = 0;
 let userName = "";
 let userLocation = "";
 
@@ -35,6 +36,7 @@ const speak = (t) => {
 
 function goForward(){
     if (indexOfDialogue < dialogue.dialogue.length) {
+        checkRadioButtons();
         let speech = checkForSpecialty(dialogue.dialogue[indexOfDialogue].content);
         speak(speech);
         indexOfDialogue = indexOfDialogue +1;
@@ -58,6 +60,7 @@ const updateElementsListener = o => {
     document.getElementById("graph3").style.display     = o.graph3;
     document.getElementById("graph4").style.display     = o.graph4;
     document.getElementById("graph5").style.display     = o.graph5;
+    document.getElementById("enterCountry").style.display = o.radiobutton;
 }
 
 const hideButtonsWhileSpeaking = _ => {
@@ -74,6 +77,16 @@ const checkForSpecialty = t => {
     s = s.replace(/NAME/, userName);
     s = s.replace(/LOCATION/, userLocation);
     return s;
+}
+
+const checkRadioButtons = _ => {
+    let ele = document.getElementsByName('countries');
+    for(k = 0; k < ele.length; k++){
+        if(ele[k].checked){
+            userLocation = ele[k].value;
+        }
+    }
+    console.log(userLocation);
 }
 
 input.addEventListener('input', updateUsername);
