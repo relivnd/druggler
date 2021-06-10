@@ -44,7 +44,7 @@ export  { dialogue }
       "value": null
     },
     "textfield": {
-      "visibility": "block"
+      "visibility": "none"
     }
   },
   {
@@ -52,87 +52,82 @@ export  { dialogue }
     "content": "or better said for information…",
     "button1": {
       "visibility": "block",
-      "value": "Heinz"
+      "value": "Yes!"
     },
     "button2": {
       "visibility": false,
       "value": null
     },
     "textfield": {
-      "visibility": false,
-      "value": null
+      "visibility": "none"
     }
   },
   {
     "dialogueID": 5,
     "content": "information about drugs…",
     "button1": {
-      "visibility": "none",
-      "value": null
+      "visibility": "block",
+      "value": "Yes!"
     },
     "button2": {
       "visibility": false,
       "value": null
     },
     "textfield": {
-      "visibility": false,
-      "value": null
+      "visibility": "none"
     }
   },
   {
     "dialogueID": 6,
     "content": "an information drug dealer",
     "button1": {
-      "visibility": false,
-      "value": null
+      "visibility": "block",
+      "value": "Yes!"
     },
     "button2": {
       "visibility": false,
       "value": null
     },
     "textfield": {
-      "visibility": false,
-      "value": null
+      "visibility": "none"
     }
   },
   {
     "dialogueID": 7,
     "content": "By the way, I’m Steve.",
     "button1": {
-      "visibility": false,
-      "value": null
+      "visibility": "block",
+      "value": "Yes!"
     },
     "button2": {
       "visibility": false,
       "value": null
     },
     "textfield": {
-      "visibility": false,
-      "value": null
+      "visibility": "none"
     }
   },
   {
     "dialogueID": 8,
     "content": "What’s your name?",
     "button1": {
-      "visibility": false,
-      "value": null
+      "visibility": "block",
+      "value": "Yes!"
     },
     "button2": {
       "visibility": true,
       "value": "Submit"
     },
     "textfield": {
-      "visibility": true,
-      "value": "Insert your name here!"
+      "visibility": "block"
     }
   },
   {
     "dialogueID": 9,
-    "content": "Hi VARIBLE FUER NAMEN",
+    "content": "Hi" + getUsername(),
     "button1": {
-      "visibility": false,
-      "value": null
+      "visibility": "block",
+      "value": "Yes!"
     },
     "button2": {
       "visibility": false,

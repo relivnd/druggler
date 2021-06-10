@@ -3,7 +3,6 @@ import { dialogue } from "./dialogueContent.js";
 
 let indexOfDialogue = 0;
 let userName = "";
-const log = document.getElementById('debugUsername');
 
 const input = document.querySelector('input');
 
@@ -51,13 +50,11 @@ function alternativeOption(){
 }
 
 const updateButtonListener = o => {
-    document.getElementById("button1").style.display = o.button1.visibility;
-    document.getElementById("button1").innerHTML     = o.button1.value;
-    document.getElementById("button2").style.display = o.button2.visibility;
-    document.getElementById("button2").innerHTML     = o.button2.value;
-    document.getElementById("enterName").style.display = o.textfield.visibility;
-    // document.getElementById("button1").style.display = dialogue.dialogue[indexOfDialogue].button1.visibility;
-    // document.getElementById("button1").innerHTML     = dialogue.dialogue[indexOfDialogue].button1.value;
+    document.getElementById("button1").style.display    = o.button1.visibility;
+    document.getElementById("button1").innerHTML        = o.button1.value;
+    document.getElementById("button2").style.display    = o.button2.visibility;
+    document.getElementById("button2").innerHTML        = o.button2.value;
+    document.getElementById("enterName").style.display  = o.textfield.visibility;
 }
 
 const hideButtonsWhileSpeaking = _ => {
@@ -66,8 +63,11 @@ const hideButtonsWhileSpeaking = _ => {
 }
 
 const updateUsername = t => {
-    userName +=  t.target.value;
-    log.textContent = t.target.value;
+    userName =  t.target.value;
 }
 
 input.addEventListener('input', updateUsername);
+
+const getUsername = _ => {
+    return userName;
+}
