@@ -53,10 +53,10 @@
 
     <div class="interaction" id="interaction">
         <button id="button1" type="button">Start</button>
-        <button id="button2" type="button"></button>
+        <button id="button2" type="button" style="display: none">Yes, why do you ask?</button>
         <div style="display: none;" id="enterName">
             <label for="textField">What's your Name?</label>
-            <input id="textField" type="text" value="Mike">
+            <input id="textField" type="text">
         </div>
         <div style="display: none" id="enterCountry">
             <input type="radio" id="switzerland" name="countries" value="Switzerland" checked>
@@ -70,6 +70,12 @@
             <input type="radio" id="usa" name="countries" value="USA">
             <label for="usa">USA</label>
         </div>
+    </div>
+    <div class="credits" id="credits" style="display: none">
+        <h1>Credits</h1>
+        <p>Tobias Vonesch</p>
+        <p>Sandro Bütler</p>
+
     </div>
 
     <script src="https://d3js.org/d3.v4.js"></script>
