@@ -127,6 +127,26 @@ button:hover {
     font-size: 1.2em;
 }
 
-.radio-image {
+[type=radio] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
 
+[type=radio] + img {
+    cursor: pointer;
+    margin: 1em;
+}
+
+[type=radio]:checked + img {
+    filter: drop-shadow(.1em .2em #215256);
+}
+
+.radio-image {
+    width: 2em;
+}
+
+.enterCountry {
+    display: flex;
 }
