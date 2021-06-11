@@ -766,7 +766,7 @@ const dialogue = {
       "graph4": "none",
       "graph5": "flex",
       "radiobutton": "none",
-      "content": 'Interesting here is, that the Americans are the only ones have to work less for meth than for cocaine',
+      "content": 'Interesting here is, that the Americans are the only ones who have to work less for meth than for cocaine',
     },
     {
       "button1": {
