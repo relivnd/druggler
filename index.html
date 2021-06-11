@@ -18,30 +18,38 @@
 
     <div class="graphs">
             <div id="graph1" style="display: none">
-                <div id="cannabisPrice"></div>
                 <div>
-                    <svg id="cannabisPriceInfo" height=50 width=460></svg>
+                    <div id="cannabisPrice"></div>
+                    <div>
+                        <svg id="cannabisPriceInfo" height=50 width=460></svg>
+                    </div>
                 </div>
                 <img class="decoration-image" alt="image" src="attachements/marijuana.svg"/>
             </div>
             <div id="graph2" style="display: none">
-                <div id="cocainePrice"></div>
                 <div>
-                    <svg id="cocainePriceInfo" height=50 width=460></svg>
+                    <div id="cocainePrice"></div>
+                    <div>
+                        <svg id="cocainePriceInfo" height=50 width=460></svg>
+                    </div>
                 </div>
                 <img class="decoration-image" alt="image" src="attachements/cocaine.svg"/>
             </div>
             <div id="graph3" style="display: none">
-                <div id="methPrice"></div>
                 <div>
-                    <svg id="methPriceInfo" height=50 width=460></svg>
+                    <div id="methPrice"></div>
+                    <div>
+                        <svg id="methPriceInfo" height=50 width=460></svg>
+                    </div>
                 </div>
                 <img class="decoration-image" alt="image" src="attachements/syringe.svg"/>
             </div>
         <div id="graph4" style="display: none">
-            <div id="bigMacIndexChart"></div>
             <div>
-                <svg id="bigMacIndexChartInfo" height=50 width=460></svg>
+                <div id="bigMacIndexChart"></div>
+                <div>
+                    <svg id="bigMacIndexChartInfo" height=50 width=460></svg>
+                </div>
             </div>
             <img class="decoration-image" alt="image" src="attachements/hamburger.svg"/>
         </div>
@@ -56,12 +64,11 @@
     </div>
 
     <div class="interaction" id="interaction">
-        <button id="button1" type="button">Start</button>
-        <button id="button2" type="button" style="display: none">Yes, why do you ask?</button>
         <div style="display: none;" id="enterName">
             <label class="textfield-label" for="textField">What's your Name?</label>
             <input class="textField" id="textField" type="text">
         </div>
+
         <div style="display: none" class="enterCountry" id="enterCountry">
             <label for="switzerland">
                 <input type="radio" id="switzerland" name="countries" value="Switzerland" checked>
@@ -84,7 +91,14 @@
                 <img class="radio-image" src="attachements/united-states.png"/>
             </label>
         </div>
+
+        <button id="button1" type="button">Start</button>
+
+        <button id="button2" type="button" style="display: none">Yes, why do you ask?</button>
+
+
     </div>
+
     <div class="credits" id="credits" style="display: none">
         <h1>Thank you for using Druggler</h1>
         <p>We hope you liked the small tour with our friend Steve.</p>

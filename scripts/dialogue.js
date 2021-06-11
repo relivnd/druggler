@@ -82,7 +82,7 @@ const checkForSpecialty = t => {
         if (userLocation === "Switzerland"){
             s = s.replace(/COUNTRYJOKE/, "Do you know why do many Swiss people have such big noses? The air is free!");
         }else if (userLocation === "Japan"){
-            s = s.replace(/COUNTRYJOKE/, "My Japanese friend told me a Peral Harbor joke. I told him he bombed it.");
+            s = s.replace(/COUNTRYJOKE/, "My Japanese friend told me a Perl Harbor joke. I told him he bombed it.");
         } else if (userLocation === "Norway"){
         s = s.replace(/COUNTRYJOKE/, "What car does a norwegian man drive? A fjord focus!");
         } else if (userLocation === "USA"){

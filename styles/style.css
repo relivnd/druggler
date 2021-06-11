@@ -150,3 +150,7 @@ button:hover {
 .enterCountry {
     display: flex;
 }
+
+.graphs {
+    display: flex;
+}
