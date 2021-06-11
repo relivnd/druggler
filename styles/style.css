@@ -45,7 +45,6 @@ body {
 }
 
 .dealer {
-
     height: 30vh;
 }
 
@@ -83,4 +82,51 @@ section{
 
 .decoration-image {
     width: 420px;
+}
+
+.interaction{
+    position: absolute;
+    left: 2em;
+    bottom: 30vh;
+    padding: 0.5em;
+}
+
+button {
+    background: #feffd1;
+    color: #215256;
+    box-shadow: .2em .5em #215256;
+    padding: 0.5em;
+    margin: 1em;
+    border-radius: .4em;
+    font-size: 1.2em;
+}
+
+button:hover {
+    transform: translateX(.2em);
+    transform: translateY(.5em);
+    box-shadow: none;
+}
+
+.textfield-label {
+    background: #feffd1;
+    color: #215256;
+    box-shadow: .1em .2em #215256;
+    padding: 0.5em;
+    margin: 1em;
+    border-radius: .4em;
+    font-size: 1.2em;
+}
+
+.textField {
+    background: #feffd1;
+    color: #215256;
+    box-shadow: .1em .2em #215256;
+    padding: 0.5em;
+    margin: 1em;
+    border-radius: .4em;
+    font-size: 1.2em;
+}
+
+.radio-image {
+
 }
