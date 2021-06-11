@@ -8,11 +8,11 @@ Student 2: Sandro Bütler
 We want to showcase drug trafficing hotspots and drug sources segmented by drug type and effect on a global scale with interactive maps. Our key target is to show where common drugs are coming from, where they get consumed and what the local quality and prices are. Furthermore we want to present where smuggler routes maybe go through and where the central hubs for drug traffiking around the world are located.
 
 ## Technical information*
-**Main file path**: *index.html
+**Main file path**: index.html
 
-**Source code repo**: *https://gitlab.fhnw.ch/...
+**Source code repo**: https://gitlab.fhnw.ch/ivispro/druggler
 
-**Supported Browsers**: *Firefox, Chrome
+**Supported Browsers**: Chrome, Firefox, Safari
 
 // Any further comments like used frameworks, etc,
 
@@ -20,5 +20,5 @@ We want to showcase drug trafficing hotspots and drug sources segmented by drug 
 Change to yes when your application is ready.
 |Version|Status|
 |--|--|
-|First prototype ready | no |
-|Final version ready  | no |
+|First prototype ready | Yes |
+|Final version ready  | Yes |
