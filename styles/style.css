@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     border: black;
+    font-family: "Helvetica Neue";
 }
 
 html {
@@ -64,11 +65,6 @@ body {
     overflow-y: scroll;
 }
 
-.box-box {
-    display: flex;
-    flex-direction: row;
-}
-
 section{
     padding: 5em;
     width: 100%;
@@ -81,7 +77,8 @@ section{
 }
 
 .decoration-image {
-    width: 420px;
+    width: 200px;
+    align-items: center;
 }
 
 .interaction{
@@ -150,10 +147,40 @@ button:hover {
 .enterCountry {
     display: flex;
 }
+
 .graphs {
-    padding-top: 50px;
-    padding-left: 50px;
+    padding-top: 5vh;
+    padding-left: 5vw;
 }
+
+.graph {
+    justify-content: space-evenly;
+}
+
 .axis {
     font: 15px sans-serif;
 }
+
+h2 {
+    background: #feffd1;
+    color: #215256;
+    padding: 0.5em;
+    margin: 1em;
+    border-radius: .4em;
+    font-size: 1.2em;
+}
+
+h1 {
+    background: #feffd1;
+    color: #215256;
+    padding: 0.2em;
+    margin: 0.5em;
+    border-radius: .4em;
+    font-size: 2em;
+}
+
+.credits-text {
+    margin-left: 30px;
+}
+
+
