@@ -2,14 +2,14 @@
 <head>
     <title>DRUGGLER</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
 
 
 </head>
 
 <body>
-    <script type="module" src="scripts/dialogue.js"></script>
+    <script type="module" src="src/dialogue.js"></script>
 
     <div class="dealer-wrapper">
         <div id="textBubble" class="textBubble"></div>
@@ -24,7 +24,7 @@
                         <svg id="cannabisPriceInfo" height=50 width=460></svg>
                     </div>
                 </div>
-                <img class="decoration-image" alt="image" src="attachements/marijuana.svg"/>
+                <img class="decoration-image" alt="image" src="img/marijuana.svg"/>
             </div>
             <div class="graph" id="graph2" style="display: none">
                 <div>
@@ -33,7 +33,7 @@
                         <svg id="cocainePriceInfo" height=50 width=460></svg>
                     </div>
                 </div>
-                <img class="decoration-image" alt="image" src="attachements/cocaine.svg"/>
+                <img class="decoration-image" alt="image" src="img/cocaine.svg"/>
             </div>
             <div class="graph" id="graph3" style="display: none">
                 <div>
@@ -42,7 +42,7 @@
                         <svg id="methPriceInfo" height=50 width=460></svg>
                     </div>
                 </div>
-                <img class="decoration-image" alt="image" src="attachements/syringe.svg"/>
+                <img class="decoration-image" alt="image" src="img/syringe.svg"/>
             </div>
         <div class="graph" id="graph4" style="display: none">
             <div>
@@ -51,7 +51,7 @@
                     <svg id="bigMacIndexChartInfo" height=50 width=460></svg>
                 </div>
             </div>
-            <img class="decoration-image" alt="image" src="attachements/hamburger.svg"/>
+            <img class="decoration-image" alt="image" src="img/hamburger.svg"/>
         </div>
         <div class="graph" id="graph5" style="display: none;">
             <div style="display: flex; flex-direction: column;">
@@ -74,23 +74,23 @@
         <div style="display: none" class="enterCountry" id="enterCountry">
             <label for="switzerland">
                 <input type="radio" id="switzerland" name="countries" value="Switzerland" checked>
-                <img class="radio-image" src="attachements/switzerland.png"/>
+                <img class="radio-image" src="img/switzerland.png"/>
             </label><br>
             <label for="japan">
                 <input type="radio" id="japan" name="countries" value="Japan">
-                <img class="radio-image" src="attachements/japan.png"/>
+                <img class="radio-image" src="img/japan.png"/>
             </label><br>
             <label for="greatBritain">
                 <input type="radio" id="greatBritain" name="countries" value="Great Britain">
-                <img class="radio-image" src="attachements/united-kingdom.png"/>
+                <img class="radio-image" src="img/united-kingdom.png"/>
             </label>
             <label for="norway">
                 <input type="radio" id="norway" name="countries" value="Norway">
-                <img class="radio-image" src="attachements/norway.png"/>
+                <img class="radio-image" src="img/norway.png"/>
             </label>
             <label for="usa">
                 <input type="radio" id="usa" name="countries" value="USA">
-                <img class="radio-image" src="attachements/united-states.png"/>
+                <img class="radio-image" src="img/united-states.png"/>
             </label>
         </div>
 
@@ -128,10 +128,10 @@
     </div>
 
     <script src="https://d3js.org/d3.v4.js"></script>
-    <script src="./scripts/cannabisPrice.js"></script>
-    <script src="./scripts/cocainePrice.js"></script>
-    <script src="./scripts/methPrice.js"></script>
-    <script src="./scripts/finalComparison.js"></script>
-    <script src="./scripts/bigMacIndex.js"></script>
+    <script src="./src/cannabisPrice.js"></script>
+    <script src="./src/cocainePrice.js"></script>
+    <script src="./src/methPrice.js"></script>
+    <script src="./src/finalComparison.js"></script>
+    <script src="./src/bigMacIndex.js"></script>
 
 </body>
