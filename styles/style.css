@@ -26,6 +26,7 @@ body {
     position: relative;
     background: #feffd1;
     border-radius: .4em;
+    max-width: 18.75em;
 }
 
 .textBubble:after {
@@ -78,4 +79,8 @@ section{
 
 .example::-webkit-scrollbar {
     display: none;
+}
+
+.decoration-image {
+    width: 420px;
 }
