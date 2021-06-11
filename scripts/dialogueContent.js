@@ -33,7 +33,7 @@ const dialogue = {
       "graph2": "none",
       "graph3": "none",
       "graph4": "none",
-      "graph5": "none",
+      "graph5": "flex",
       "radiobutton": "none",
       "content": 'Okay good, I’m a dealer…'
     },
@@ -49,7 +49,7 @@ const dialogue = {
       "graph1": "none",
       "graph2": "none",
       "graph3": "none",
-      "graph4": "none",
+      "graph4": "flex",
       "graph5": "none",
       "radiobutton": "none",
       "content": 'for drugs…',
@@ -65,7 +65,7 @@ const dialogue = {
       },
       "graph1": "none",
       "graph2": "none",
-      "graph3": "none",
+      "graph3": "flex",
       "graph4": "none",
       "graph5": "none",
       "radiobutton": "none",
@@ -81,7 +81,7 @@ const dialogue = {
         "visibility": "none"
       },
       "graph1": "none",
-      "graph2": "none",
+      "graph2": "flex",
       "graph3": "none",
       "graph4": "none",
       "graph5": "none",
@@ -97,7 +97,7 @@ const dialogue = {
       "textfield": {
         "visibility": "none"
       },
-      "graph1": "none",
+      "graph1": "flex",
       "graph2": "none",
       "graph3": "none",
       "graph4": "none",
@@ -884,9 +884,27 @@ const dialogue = {
       "graph3": "none",
       "graph4": "none",
       "graph5": "none",
+      "credits": "none",
+      "radiobutton": "none",
+      "content": 'Here they are. If you want to start over again, just reload the page.',
+    },
+    {
+      "button1": {
+        "visibility": "none",
+        "value": ""
+      },
+      "button2": "none",
+      "textfield": {
+        "visibility": "none"
+      },
+      "graph1": "none",
+      "graph2": "none",
+      "graph3": "none",
+      "graph4": "none",
+      "graph5": "none",
       "credits": "block",
       "radiobutton": "none",
-      "content": 'Here they are. If you want to start over again, just reload the page. Bye',
+      "content": 'Bye NAME!',
     },
 
 

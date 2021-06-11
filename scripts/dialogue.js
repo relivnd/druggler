@@ -106,8 +106,9 @@ const checkRadioButtons = _ => {
 
 input.addEventListener('input', updateUsername);
 
-//TODO: ADD Styling
+//TODO: Credits Styling
 
-//TODO: Finish JSON script
+//TODO: Layout of Components
 
-//TODO: Fix Chart Countries
+//TODO: Update Charts
+

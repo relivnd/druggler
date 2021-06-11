@@ -150,7 +150,10 @@ button:hover {
 .enterCountry {
     display: flex;
 }
-
 .graphs {
-    display: flex;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.axis {
+    font: 15px sans-serif;
 }

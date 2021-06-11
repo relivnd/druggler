@@ -1,36 +1,36 @@
 
 var dataUSA = [
     {group: "BigMac", value: 10},
-    {group: "Canabis", value: 57},
-    {group: "Cocaine", value: 446},
-    {group: "Meth", value: 359}
+    {group: "Canabis (0.5g)", value: 28.5},
+    {group: "Cocaine (0.5g)", value: 223},
+    {group: "Meth (0.2g)", value: 179.5}
 ];
 
 var dataJAPAN = [
     {group: "BigMac", value: 11},
-    {group: "Canabis", value: 135},
-    {group: "Cocaine", value: 540},
-    {group: "Meth", value: 1621}
+    {group: "Canabis (0.5g)", value: 67.5},
+    {group: "Cocaine (0.5g)", value: 270},
+    {group: "Meth (0.2g)", value: 324.2}
 ];
 
 var dataGREATBRITAN = [
     {group: "BigMac", value: 11},
-    {group: "Canabis", value: 16},
-    {group: "Cocaine", value: 107},
-    {group: "Meth", value: 326}
+    {group: "Canabis (0.5g)", value: 8},
+    {group: "Cocaine (0.5g)", value: 53.5},
+    {group: "Meth (0.2g)", value: 65.2}
 ];
 
 var dataNORWAY = [
     {group: "BigMac", value: 13},
-    {group: "Canabis", value: 24},
-    {group: "Cocaine", value: 214}
+    {group: "Canabis (0.5g)", value: 12},
+    {group: "Cocaine (0.5g)", value: 107}
 ];
 
 var dataSWITZERLAND = [
     {group: "BigMac", value: 12},
-    {group: "Canabis", value: 21},
-    {group: "Cocaine", value: 160},
-    {group: "Meth", value: 453}
+    {group: "Canabis (0.5g)", value: 10.5},
+    {group: "Cocaine (0.5g)", value: 80},
+    {group: "Meth (0.2g)", value: 90.6}
 ];
 
 var margin = {top: 30, right: 30, bottom: 70, left: 60},
@@ -58,6 +58,7 @@ var yAxis = svg_finalComparison.append("g")
 
 svg_finalComparison.append("text")
     .attr("transform", "rotate(-90)")
+    .attr("class", "axis")
     .attr("y", 0 - margin.left)
     .attr("x",0 - (height / 2))
     .attr("dy", "1em")
@@ -65,6 +66,7 @@ svg_finalComparison.append("text")
     .text("Minutes of Work needed to buy one Unit");
 
 svg_finalComparison.append("text")
+    .attr("class", "axis")
     .attr("transform",
         "translate(" + (width/2) + " ," +
         (height + margin.top + 20) + ")")
@@ -92,7 +94,7 @@ function update(data) {
         .attr("y", function(d) { return y(d.value); })
         .attr("width", x.bandwidth())
         .attr("height", function(d) { return height - y(d.value); })
-        .attr("fill", "#e41a1c")
+        .attr("fill", "#6b486b")
     dataTemp
         .exit()
         .remove()
