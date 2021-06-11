@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<head>
+    <title>DRUGGLER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="utf-8">
+
+    <!-- Load d3.js -->
+<!--    <script src="./lib/d3.min.js"></script>-->
+<!--    External D3 Library-->
+    <script src="https://d3js.org/d3.v4.js"></script>
+
+
+</head>
+
+<body>
+
+    <div class="dealer-wrapper">
+
+        <div id="textBubble" class="textBubble">adsfgasdf</div>
+        <div id="dealerContainer" class="dealer"></div>
+        <script src="scripts/dialogue.js"></script>
+
+    </div>
+
+    <div class="container">
+        <section id="introduction">
+            <h1> Introduction</h1>
+            <input type="button" value="Yes!" formaction="https://google.com">
+            <input type="button" onclick="speak()" value="Of course not!">
+            <p class="textBubble">Fantastic. My name's Steve. I'm a local drug dealer. What's your name?</p>
+            <form>
+                <input type="text">
+                <input type="submit">
+            </form>
+        </section>
+        <section id="bigMacIndex-section">
+            <h1> BigMac Price Comparisation</h1>
+            <p>USA, CH, NL, GB & JP Daten in Bigmac CSV<br> Stundenlohn CSV USA, CH, NL, GB, JP</p>
+            <div id="bigMacIndexChart"></div>
+            <div>
+                <svg id="bigMacIndexChartInfo" height=50 width=460></svg>
+            </div>
+            <p class="textBubble">Did you know that...</p>
+        </section>
+        <section id="price-section">
+            <h1> Drogenpreis Comparison</h1>
+            <div class="box-box">
+                <div>
+                    <div id="canabisPrice"></div>
+                    <div>
+                        <svg id="canabisPriceInfo" height=50 width=460></svg>
+                    </div>
+                </div>
+                <div>
+                    <div id="cocainePrice"></div>
+                    <div>
+                        <svg id="cocainePriceInfo" height=50 width=460></svg>
+                    </div>
+                </div>
+                <div>
+                    <div id="methPrice"></div>
+                    <div>
+                        <svg id="methPriceInfo" height=50 width=460></svg>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <section id="workForDrugs-section">
+            <h1> Wie lange muss man Arbeiten für Essen & Drogen? </h1>
+            <!-- Add buttons for each country -->
+            <button onclick="update(dataUSA)">United States</button>
+            <button onclick="update(dataJAPAN)">Japan</button>
+            <button onclick="update(dataGREATBRITAN)">Great Britan</button>
+            <button onclick="update(dataNORWAY)">Norway</button>
+            <button onclick="update(dataSWITZERLAND)">Switzerland</button>
+            <div id="finalComparison"></div>
+        </section>
+    </div>
+
+<script src="scripts/cannabisPrice.js"></script>
+    <script src="./scripts/cocainePrice.js"></script>
+    <script src="./scripts/methPrice.js"></script>
+
+<!-- Color Scale -->
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<!--<script src="./scripts/price.js"></script>-->
+<!--<script src="./scripts/purity.js"></script>-->
+</body>

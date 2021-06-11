@@ -5,88 +5,133 @@
     <link rel="stylesheet" href="css/style.css">
     <meta charset="utf-8">
 
-    <!-- Load d3.js -->
-<!--    <script src="./lib/d3.min.js"></script>-->
-<!--    External D3 Library-->
-    <script src="https://d3js.org/d3.v4.js"></script>
-
 
 </head>
 
 <body>
+    <script type="module" src="src/dialogue.js"></script>
 
     <div class="dealer-wrapper">
-
-        <div id="textBubble" class="textBubble">adsfgasdf</div>
+        <div id="textBubble" class="textBubble"></div>
         <div id="dealerContainer" class="dealer"></div>
-        <script src="src/dealerProjector.js"></script>
-
     </div>
 
-    <div class="container">
-        <section id="introduction">
-            <h1> Introduction</h1>
-            <input type="button" value="Yes!" formaction="https://google.com">
-            <input type="button" onclick="speak()" value="Of course not!">
-            <p class="textBubble">Fantastic. My name's Steve. I'm a local drug dealer. What's your name?</p>
-            <form>
-                <input type="text">
-                <input type="submit">
-            </form>
-        </section>
-        <section id="bigMacIndex-section">
-            <h1> BigMac Price Comparisation</h1>
-            <p>USA, CH, NL, GB & JP Daten in Bigmac CSV<br> Stundenlohn CSV USA, CH, NL, GB, JP</p>
-            <div id="bigMacIndexChart"></div>
-            <div>
-                <svg id="bigMacIndexChartInfo" height=50 width=460></svg>
-            </div>
-            <p class="textBubble">Did you know that...</p>
-        </section>
-        <section id="price-section">
-            <h1> Drogenpreis Comparison</h1>
-            <div class="box-box">
+    <div class="graphs">
+            <div class="graph" id="graph1" style="display: none">
                 <div>
-                    <div id="canabisPrice"></div>
+                    <div id="cannabisPrice"></div>
                     <div>
-                        <svg id="canabisPriceInfo" height=50 width=460></svg>
+                        <svg id="cannabisPriceInfo" height=50 width=460></svg>
                     </div>
                 </div>
+                <img class="decoration-image" alt="image" src="img/marijuana.svg"/>
+            </div>
+            <div class="graph" id="graph2" style="display: none">
                 <div>
                     <div id="cocainePrice"></div>
                     <div>
                         <svg id="cocainePriceInfo" height=50 width=460></svg>
                     </div>
                 </div>
+                <img class="decoration-image" alt="image" src="img/cocaine.svg"/>
+            </div>
+            <div class="graph" id="graph3" style="display: none">
                 <div>
                     <div id="methPrice"></div>
                     <div>
                         <svg id="methPriceInfo" height=50 width=460></svg>
                     </div>
                 </div>
-
+                <img class="decoration-image" alt="image" src="img/syringe.svg"/>
             </div>
-
-        </section>
-        <section id="workForDrugs-section">
-            <h1> Wie lange muss man Arbeiten für Essen & Drogen? </h1>
-            <!-- Add buttons for each country -->
-            <button onclick="update(dataUSA)">United States</button>
-            <button onclick="update(dataJAPAN)">Japan</button>
-            <button onclick="update(dataGREATBRITAN)">Great Britan</button>
-            <button onclick="update(dataNORWAY)">Norway</button>
-            <button onclick="update(dataSWITZERLAND)">Switzerland</button>
+        <div class="graph" id="graph4" style="display: none">
+            <div>
+                <div id="bigMacIndexChart"></div>
+                <div>
+                    <svg id="bigMacIndexChartInfo" height=50 width=460></svg>
+                </div>
+            </div>
+            <img class="decoration-image" alt="image" src="img/hamburger.svg"/>
+        </div>
+        <div class="graph" id="graph5" style="display: none;">
+            <div style="display: flex; flex-direction: column;">
+                <button id="usaButton"          onclick="update(dataUSA)">United States</button>
+                <button id="japanButton"        onclick="update(dataJAPAN)">Japan</button>
+                <button id="greatBritainButton" onclick="update(dataGREATBRITAN)">Great Britan</button>
+                <button id="norwayButton"       onclick="update(dataNORWAY)">Norway</button>
+                <button id="switzerlandButton"  onclick="update(dataSWITZERLAND)">Switzerland</button>
+            </div>
             <div id="finalComparison"></div>
-        </section>
+        </div>
     </div>
 
-<script src="src/bigMacIndex.js"></script>
-<script src="src/canabisPrice.js"></script>
-    <script src="src/cocainePrice.js"></script>
-    <script src="src/methPrice.js"></script>
-    <script src="src/finalComparison.js"></script>
-<!-- Color Scale -->
-<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
-<!--<script src="./scripts/price.js"></script>-->
-<!--<script src="./scripts/purity.js"></script>-->
+    <div class="interaction" id="interaction">
+        <div style="display: none;" id="enterName">
+            <label class="textfield-label" for="textField">What's your Name?</label>
+            <input class="textField" id="textField" type="text">
+        </div>
+
+        <div style="display: none" class="enterCountry" id="enterCountry">
+            <label for="switzerland">
+                <input type="radio" id="switzerland" name="countries" value="Switzerland" checked>
+                <img class="radio-image" src="img/switzerland.png"/>
+            </label><br>
+            <label for="japan">
+                <input type="radio" id="japan" name="countries" value="Japan">
+                <img class="radio-image" src="img/japan.png"/>
+            </label><br>
+            <label for="greatBritain">
+                <input type="radio" id="greatBritain" name="countries" value="Great Britain">
+                <img class="radio-image" src="img/united-kingdom.png"/>
+            </label>
+            <label for="norway">
+                <input type="radio" id="norway" name="countries" value="Norway">
+                <img class="radio-image" src="img/norway.png"/>
+            </label>
+            <label for="usa">
+                <input type="radio" id="usa" name="countries" value="USA">
+                <img class="radio-image" src="img/united-states.png"/>
+            </label>
+        </div>
+
+        <button id="button1" type="button">Start</button>
+
+        <button id="button2" type="button" style="display: none">Yes, why do you ask?</button>
+
+
+    </div>
+
+    <div class="credits" id="credits" style="display: none">
+        <h1>Thank you for using Druggler</h1>
+        <p class="credits-text">We hope you liked the small tour with our friend Steve.</p>
+        <h2>Sources</h2>
+        <p class="credits-text">All the used data can be looked up at the following two sources:
+        <ul>
+            <li class="credits-text"><a href="https://dataunodc.un.org/" target="_blank">Information about Drug Prices</a></li>
+            <li class="credits-text"><a href="https://www.economist.com/big-mac-index" target="_blank">Big-Mac Index</a></li>
+        </ul>
+        </p>
+        <h2>Technologies</h2>
+        <p class="credits-text">The technical realization was make with the D3js Library for graphs and basic JS Functions.
+        <ul>
+            <li  class="credits-text"><a href="https://d3js.org/" target="_blank">D3js</a></li>
+            <li  class="credits-text"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules" target="_blank">JavaScript Modules</a></li>
+        </ul>
+        </p>
+        <h2>Druggler</h2>
+        <p class="credits-text">An IVISPro at FHNW FS21 by
+        <ul>
+            <li  class="credits-text"><a href="https://relivnd.dev/" target="_blank">Tobias Vonesch</a></li>
+            <li  class="credits-text"><a href="https://teqly.ch/" target="_blank">Sandro Bütler</a></li>
+        </ul>
+        </p>
+    </div>
+
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="./src/cannabisPrice.js"></script>
+    <script src="./src/cocainePrice.js"></script>
+    <script src="./src/methPrice.js"></script>
+    <script src="./src/finalComparison.js"></script>
+    <script src="./src/bigMacIndex.js"></script>
+
 </body>

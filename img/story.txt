@@ -1,0 +1,207 @@
+Hey you! yes YOU! Are you a cop?
+
+B1 => no => goFurther()
+B2 => yes => google.com
+
+Okay good, I’m a dealer…
+
+B1 => Go On...
+
+for drugs…
+
+B1 => Okay?
+
+or better said for information…
+
+B1 => What?
+
+information about drugs…
+
+B1 => WHAT?!
+
+an information drug dealer
+
+B1 => If you say so...
+
+By the way, I’m Steve.
+
+B1 => Hi, Steve
+
+What’s your name?
+
+TF => $name => Hi $name
+B1 => Ok
+
+Ok $name, let me teach you some things about happiness
+
+B1 => But I'm already happy?!
+
+Drugs are a little bit like stock
+
+B1 => You ean like Dow Jones?
+
+Supply and demand regulate the price as brutal as fuck
+
+B1 => Like Bitcoin?
+
+that’s because drugs don’t know any governmental regulations
+
+B1 => Ok, Like Bitcoin then...
+
+except for the fact of course… that they’re illegal.
+
+B1 => Unlike Bitcoin...
+
+Where are you from?
+
+RB => $country =>
+B1 => I'm from
+
+"Funny country related line"
+
+B1 => Hahaha
+
+Okay $name, let’s have a look at how expensive drugs are in $country in comparison
+
+G1 => DIE DREI GRAFIKEN WERDEN GELADEN
+B1 => What do we see here?
+
+Let's have a look at the three topsellers Canabis, Cocaine and Meth
+
+B1 => okay
+
+We start with Canabis, weed, 420, pot, call it what you want
+
+B1 => Ooh the dutchie
+
+As you see the prices are globally on the fall
+
+B1 => Hmmmm
+
+In the last few years pot got nearly everywhere cheaper
+
+B1 => better smoke it quickly then
+
+The Production worldwide has rapidly increased due to a lot of countries which decrimilaized the consume of cannabis
+
+B1 => progressive...
+
+Next you see my beautiful chart for the ferrari of drugs: Cocaine
+
+B1 => vrooom vroom
+
+You see, the prices in Europe are quite stable and on the bottom of the scale
+
+B1 => interesting
+
+It is quite special that Cocaine is cheapest in Switzerland, you might have to thank the bankers for that
+
+B1 => Hmmm
+
+Also we faced a huge price drop in Japan in 2017
+
+B1 => But why?
+
+The crazy government over there changed the laws and reduced the penalty for drug posession quite a bit
+
+B1 => wow...
+
+So it's now much easier to get people to smuggle some white gold into Japan
+
+B1 => Guess so
+
+Last but not least we have a look at the shiny diamond: Crystal Meth
+
+B1 => Hard stuff innit?
+
+Over here the Americans are suddenly quite price efficient
+
+B1 => looks like it
+
+Maybe there are still a lot of bald guys cooking some Crystal in old motorhomes in the desert
+
+B1 => breaking bad?
+
+As you see, the Japanese Meth consumers could not benefit from the recent law changes, Meth is there still a niche product which still makes it so expensive
+
+B1 => not a bad thing
+
+You might ask why drugs are so expensive in $country?
+
+B1 => Yes!
+
+Don’t ask me, I’m a drug dealer, not your economy teacher
+
+B1 => hahaha
+
+But I can tell you also Something about Fast Food if You Like?
+
+B1 => Fast Food and Drugs?
+
+I made up this comparison Chart of the BigMac Index for you
+
+G2 => Visible
+B1 => What's the BigMac Index?
+
+You see the price of a classic BigMac in Dollars for each country
+
+B1 => okay
+
+In the last years the prices slightly increased except for the states
+
+B1 => no suprise
+
+When I'm looking at those figures I instantly get hungry
+
+B1 => really?
+
+But why did I show you the Prices of a Big Mac?
+
+B1 => Yes?
+
+=> Do you wanna know?
+
+B1 => YES!
+
+Well the prices in each country are all relative
+
+B1 => okay
+
+the interesting question for me as a seller is...
+
+B1 => yes?
+
+What are the people able and willing to pay?
+
+G2 => hidden
+B1 => Okay!
+
+That's why we have a look an check how long people have to work until the can afford a Joint, a Line oder a Shot
+
+G3 => Visible
+B1 =>
+
+Interesting here ist, that the Americans as the only ones have to work less for Meth than for Cocaine
+
+B1 =>
+
+Also that the Brits and the Swiss have to work nearly the same amount of time to afford a BigMac or a Joint
+
+B1 =>
+
+So that's probably why the demand of Canabis is so high, if you have to decide either to eat or to smoke
+
+B1 =>
+
+You know what my answer would be
+
+B1 =>
+
+That's it
+
+B1 => No already?
+
+To restart reload the page
+
+B1 => Link to Page
+

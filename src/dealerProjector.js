@@ -1,3 +1,5 @@
+export { drawDealer } ;
+
 const dealer = mouthState => `
     <svg class="dealer" viewBox="0 0 491 462" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <title>dealer</title>
@@ -34,12 +36,6 @@ const dealer = mouthState => `
         </svg>
     `;
 
-drawDealer = mouthState => document.getElementById("dealerContainer").innerHTML = dealer(mouthState);
-
-let i = 0;
-let text = 'pssst, hey you! Yes YOU! Are you a cop?';
-let speed = 50;
-
 let mouthOpen = {
     cx:26,
     cy:14,
@@ -54,11 +50,4 @@ let mouthClose = {
     ry:8.5
 }
 
-speak = _ => {
-    if (i < text.length) {
-        document.getElementById("textBubble").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(speak, speed);
-        drawDealer(i % 2 !== 0 ? mouthOpen : mouthClose);
-    }
-}
+const drawDealer = mouthState => document.getElementById("dealerContainer").innerHTML = dealer(mouthState ? mouthOpen : mouthClose);
